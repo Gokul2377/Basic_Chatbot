@@ -61,6 +61,19 @@
         </template>
     </category>
     
+    <category>
+        <pattern>* is *</pattern>
+        <template>
+            I have remembered that. You can quiz me about it sometime.
+            <learn>
+                <category>
+                    <pattern>what is *</pattern>
+                    <template>It is a <eval><star index="2"/></eval></template>
+                </category>
+            </learn>
+        </template>
+    </category>
+    
     
 
 </aiml>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+     <category>
+        <pattern>howdy</pattern>
+        <template><srai>hello</srai></template>
+    </category>
+    
+    <category>
+        <pattern>WHAT ARE YOU</pattern>
+        <template>
+            I'm a bot, silly!
+        </template>
+    </category> 
+
+    <category>
+        <pattern>My name is *</pattern>
+        <template>
+        Hello <set name="firstname"><star/></set>
+        </template>
+    </category> 
+
+    <category>
+        <pattern>What is my name</pattern>
+        <template>
+        <get name="firstname"/>
+        </template>
+    </category> 
+
+</aiml>
